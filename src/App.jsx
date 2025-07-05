@@ -71,7 +71,7 @@ export default function Portfolio() {
                 <section className="max-w-3xl mx-auto bg-white p-6 rounded-xl shadow">
                     <h2 className="text-2xl font-bold mb-4 text-blue-700">Über mich</h2>
                     <p className="text-gray-700 leading-relaxed">
-                        Ich bin ein leidenschaftlicher Entwickler mit Fokus auf moderne Webtechnologien wie React, Node.js und Tailwind CSS.
+                        Ich bin einn leidenschaftlicher Entwickler mit Fokus auf moderne Webtechnologien wie React, Node.js und Tailwind CSS.
                         Mit praktischer Erfahrung in der Entwicklung und Betreuung technischer Systeme bin ich bestrebt, benutzerfreundliche und effiziente Weblösungen zu schaffen.
                     </p>
                 </section>
