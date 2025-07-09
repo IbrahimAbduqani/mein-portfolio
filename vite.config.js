@@ -3,6 +3,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/mein--portfolio/',  // <--- WICHTIG: Passe an den Repo-Namen an!
+  base: '/mein-portfolio/',  // <--- WICHTIG: Passe an den Repo-Namen an!
   plugins: [react()],
 })
