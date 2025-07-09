@@ -30,7 +30,7 @@ export default function Portfolio() {
                         className="mx-auto w-32 h-32 rounded-full shadow-lg mb-4 border-4 border-white"
                     />
                     <h1 className="text-4xl font-bold mb-2 text-gray-800">Abduqani Ibrahim</h1>
-                    <p className="text-xl text-gray-600 mb-6">Full-Stack Entwickler</p>
+                    <p className="text-xl text-gray-600 mb-6">DevOps/Full-Stack Entwickler</p>
                     <div className="flex justify-center gap-6 mt-6">
                         <a
                             href="mailto:deine.email@example.com"
