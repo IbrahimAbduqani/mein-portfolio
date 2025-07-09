@@ -9,7 +9,7 @@ export default function Portfolio() {
         {
             title: "Projekt A",
             description: "Ein interessantes Projekt mit React und Tailwind.",
-            url: "https://github.com/deinusername/projekt-a",
+            url: "https://github.com/ibrahimabduqani/webtec",
             tags: ["React", "Tailwind", "Frontend"]
         },
         {
@@ -40,7 +40,7 @@ export default function Portfolio() {
                             <Mail className="w-6 h-6" />
                         </a>
                         <a
-                            href="https://github.com/deinusername"
+                            href="https://github.com/ibrahimabduqani"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="GitHub"
@@ -49,7 +49,7 @@ export default function Portfolio() {
                             <Github className="w-6 h-6" />
                         </a>
                         <a
-                            href="https://linkedin.com/in/deinusername"
+                            href="https://linkedin.com/in/adgn"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="LinkedIn"
