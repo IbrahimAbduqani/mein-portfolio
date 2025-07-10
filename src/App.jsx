@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Github, Mail, Linkedin, Twitter } from "lucide-react";
+import { Github, Mail, Linkedin, Download } from "lucide-react";
 import profileImage from "../public/a63baaff-79bf-4209-a63e-b0ce18a6cf39.png";
 
 export default function Portfolio() {
@@ -7,10 +7,10 @@ export default function Portfolio() {
 
     const projects = [
         {
-            title: "Projekt A",
-            description: "Ein interessantes Projekt mit React und Tailwind.",
+            title: "Projekt ()",
+            description: "Ein interessantes Projekt mit Java&Spring-Boot.",
             url: "https://github.com/ibrahimabduqani/webtec",
-            tags: ["Java", "Nodejs", "Spring-Boot","MySQL","React", "Tailwind", "Frontend"]
+            tags: ["Java", "Nodejs", "Spring-Boot","React", "Tailwind", "Frontend"]
         },
         {
             title: "Projekt B",
@@ -21,7 +21,8 @@ export default function Portfolio() {
     ];
 
     return (
-        <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 text-gray-900 p-6 font-sans">
+        // In your main div
+        <main className="min-h-screen bg-gray-50 text-gray-900 p-6 font-sans">
             <div className="max-w-4xl mx-auto">
                 <header className="text-center py-10">
                     <img
@@ -31,7 +32,20 @@ export default function Portfolio() {
                     />
                     <h1 className="text-4xl font-bold mb-2 text-gray-800">Abduqani Ibrahim</h1>
                     <p className="text-xl text-gray-600 mb-6">DevOps/Full-Stack Entwickler</p>
-                    <div className="flex justify-center gap-6 mt-6">
+
+                    {/* CV Download Button - Added Here */}
+                    <div className="mb-8">
+                        <a
+                            href="LebenslaufIBO.pdf" // Make sure to add your CV file in the public folder
+                            download
+                            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition-colors"
+                        >
+                            <Download className="w-5 h-5 mr-2" />
+                            Lebenslauf Herunterladen
+                        </a>
+                    </div>
+
+                    <div className="flex justify-center gap-6 mt-4">
                         <a
                             href="mailto:adgn.deut@gmail.com"
                             aria-label="Email"
