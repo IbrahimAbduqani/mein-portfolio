@@ -10,7 +10,7 @@ export default function Portfolio() {
             title: "Projekt A",
             description: "Ein interessantes Projekt mit React und Tailwind.",
             url: "https://github.com/ibrahimabduqani/webtec",
-            tags: ["React", "Tailwind", "Frontend"]
+            tags: ["Java", "Nodejs", "Spring-Boot","React", "Tailwind", "Frontend"]
         },
         {
             title: "Projekt B",
@@ -33,7 +33,7 @@ export default function Portfolio() {
                     <p className="text-xl text-gray-600 mb-6">DevOps/Full-Stack Entwickler</p>
                     <div className="flex justify-center gap-6 mt-6">
                         <a
-                            href="mailto:deine.email@example.com"
+                            href="mailto:adgn.deut@gmail.com"
                             aria-label="Email"
                             className="hover:text-blue-600 transition-colors"
                         >
@@ -86,26 +86,36 @@ export default function Portfolio() {
                 {activeTab === "projects" ? (
                     <section className="grid gap-8 md:grid-cols-2">
                         {projects.map((project, i) => (
-                            <a
+                            <div
                                 key={i}
-                                href={project.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow hover:-translate-y-1"
+                                className="bg-white rounded-lg overflow-hidden shadow-card hover:shadow-lg transition-shadow"
                             >
-                                <h3 className="text-xl font-semibold text-gray-800 mb-2">{project.title}</h3>
-                                <p className="text-gray-600 mb-4">{project.description}</p>
-                                <div className="flex flex-wrap gap-2">
-                                    {project.tags.map((tag, index) => (
-                                        <span
-                                            key={index}
-                                            className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full"
-                                        >
-                                            {tag}
-                                        </span>
-                                    ))}
+                                <div className="p-6">
+                                    <h3 className="text-xl font-semibold text-gray-800 mb-2">{project.title}</h3>
+                                    <p className="text-gray-600 mb-4">{project.description}</p>
+                                    <div className="flex flex-wrap gap-2 mb-4">
+                                        {project.tags.map((tag, index) => (
+                                            <span
+                                                key={index}
+                                                className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full"
+                                            >
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
+                                    <a
+                                        href={project.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+                                    >
+                                        View Project
+                                        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                        </svg>
+                                    </a>
                                 </div>
-                            </a>
+                            </div>
                         ))}
                     </section>
                 ) : (
