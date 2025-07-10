@@ -10,7 +10,7 @@ export default function Portfolio() {
             title: "Projekt A",
             description: "Ein interessantes Projekt mit React und Tailwind.",
             url: "https://github.com/ibrahimabduqani/webtec",
-            tags: ["Java", "Nodejs", "Spring-Boot","React", "Tailwind", "Frontend"]
+            tags: ["Java", "Nodejs", "Spring-Boot","MySQL","React", "Tailwind", "Frontend"]
         },
         {
             title: "Projekt B",
